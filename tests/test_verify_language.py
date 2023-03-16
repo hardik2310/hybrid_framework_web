@@ -45,4 +45,4 @@ class TestLanguageBook(WebDriverWrapper):
         assert_that(search_box_input_value).is_equal_to(book_name)
 
         element_found = self.driver.find_element(By.XPATH, '//span[text()="' + search_result + '"]').is_displayed()
-        assert element_found
+        assert element_found == True
