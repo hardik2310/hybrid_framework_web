@@ -1,0 +1,3 @@
+name,mobile_number,password,expected_error
+Abc Xyz,,Abc@123,Enter your mobile number
+Test Xyz,9999998877,,Enter your password

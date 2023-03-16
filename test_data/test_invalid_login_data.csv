@@ -1,3 +1,0 @@
-Email,password,expected_error
-abc@xyz.com,Abc@123,Invalid credentials
-test@xyz.com,Test@123,Invalid credentials

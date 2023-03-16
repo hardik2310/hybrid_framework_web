@@ -2,8 +2,8 @@ import pytest
 from assertpy import assert_that
 from selenium.webdriver.common.by import By
 
-from base.webdriver_listner import WebDriverWrapper
-from utilities import data_source
+from without_POM.base.webdriver_listner import WebDriverWrapper
+from without_POM.utilities import data_source
 
 
 class TestInvalidLogin(WebDriverWrapper):
@@ -19,7 +19,6 @@ class TestInvalidLogin(WebDriverWrapper):
         self.driver.find_element(By.ID, "signInSubmit").click()
         actual_error = self.driver.find_element(By.ID,
                                                 "auth-error-message-box").text
-        print(actual_error)
         assert_that(cred_error).is_equal_to(actual_error)
 
 
