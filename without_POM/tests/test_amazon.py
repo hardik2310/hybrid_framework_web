@@ -7,7 +7,6 @@ from without_POM.utilities import data_source
 
 
 class TestInvalidLogin(WebDriverWrapper):
-
     @pytest.mark.parametrize("email, password, cred_error", data_source.test_invalid_login_data)
     def test_invalid_login(self, email, password, cred_error):
         """To verify the Invalid login"""
