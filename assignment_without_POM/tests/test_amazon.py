@@ -2,8 +2,8 @@ import pytest
 from assertpy import assert_that
 from selenium.webdriver.common.by import By
 
-from without_POM.base.webdriver_listner import WebDriverWrapper
-from without_POM.utilities import data_source
+from assignment_without_POM.base.webdriver_listner import WebDriverWrapper
+from assignment_without_POM.utilities import data_source
 
 
 class TestInvalidLogin(WebDriverWrapper):
