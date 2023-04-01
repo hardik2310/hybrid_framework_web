@@ -14,7 +14,7 @@ class TestInvalidLogin(WebDriverWrapper):
 
     @pytest.mark.parametrize("name, mobile_number, password, expected_error",
                              get_csv_as_list(file_path='../test_data/test_invalid_create_user_data.csv'))
-    def test_invalid_login(self, name, mobile_number, password, expected_error):
+    def test_invalid_create_user(self, name, mobile_number, password, expected_error):
         """To verify the create user with invalid data"""
 
         self.wait = WebDriverWait(self.driver, 10)
