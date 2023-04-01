@@ -7,8 +7,8 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 
+from assignment_without_POM.base.webdriver_listner import WebDriverWrapper
 from assignment_without_POM.utilities.read_utils import get_excel_as_list
-from with_POM_exercise.config.conftest import WebDriverWrapper
 
 
 class TestLanguageBook(WebDriverWrapper):
